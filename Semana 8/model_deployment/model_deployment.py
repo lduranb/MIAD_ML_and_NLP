@@ -12,7 +12,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 def predict_genre(plot):
     
     tfidf = joblib.load('Xfeat.pkl') 
-    clf = joblib.load('model_deployment/movie_genre_clf.pkl') 
+    clf = joblib.load('movie_genre_clf.pkl') 
 
     plot_ = pd.DataFrame([plot], columns=['plot'])
   
