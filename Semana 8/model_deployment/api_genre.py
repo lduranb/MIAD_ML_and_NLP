@@ -5,7 +5,7 @@ from model_deployment import predict_genre
 
 app = Flask(__name__)
 
-# Definición API Flask
+# Definicion API Flask
 api = Api(
     app, 
     version='1.0', 
@@ -15,7 +15,7 @@ api = Api(
 ns = api.namespace('predict', 
      description='Movie Genre Predictor')
 
-# Definición argumentos o parámetros de la API
+# Definicion argumentos o parametros de la API
 parser = api.parser()
 parser.add_argument(
     'Plot', 
@@ -28,7 +28,7 @@ resource_fields = api.model('Resource', {
     'result': fields.String,
 })
 
-# Definición de la clase para disponibilización
+# Definicion de la clase para disponibilizacion
 @ns.route('/')
 class PhishingApi(Resource):
 
