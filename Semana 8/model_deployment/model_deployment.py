@@ -1,9 +1,6 @@
 #!/usr/bin/python
 
 %pip install neattext
-%pip install flask
-%pip install flask_restx
-
 from flask import Flask
 from flask_restx import Api, Resource, fields
 import sys
